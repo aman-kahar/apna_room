@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="custom_alert_notification.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+    ></script>
+    <script src="https://kit.fontawesome.com/67a7f66806.js" crossorigin="anonymous"></script>
+    <title>Notification Alert</title>
+  </head>
+  <body>
+      <button>Show Alert</button>
+    <div class="alert hide">
+      <span class="fas fa-exclamation-circle"> </span>
+      <span class="msg">Warning: This is a warning alert!</span>
+      <span class="close-btn">
+        <span class="fas fa-times"></span>
+      </span>
+    </div>
+
+<script>
+$('button').click(function(){
+  $('.alert').removeClass("hide");
+  $('.alert').addClass("show");
+  $('.alert').addClass("showAlert");
+  setTimeout(function(){
+    $('.alert').addClass("hide");
+    $('.alert').removeClass("show");
+  },5000)//hide alert automatically after 5 seconds;
+});
+$('.close-btn').click(function(){
+    $('.alert').addClass("hide");
+    $('.alert').removeClass("show");
+});
+</script>
+
+
+
+  </body>
+</html>

@@ -1,0 +1,233 @@
+<l!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital@1&display=swap"
+        rel="stylesheet"
+      />
+      <link rel="stylesheet" href="../CSS/add_rooms.css" />
+
+      <title>ADD ROOM'S</title>
+    </head>
+
+    <body>
+      <form action="add_room.jsp" method="post" enctype="multipart/form-data">
+        <div class="heading">
+          <h2>ADD ROOM'S</h2>
+        </div>
+        <fieldset>
+          <legend>Room Detail's</legend>
+          <div>
+            <br />
+          
+            <input type="hidden" name="user-id" value="1001">
+
+            <label for="room-type">ROOM TYPE:- </label>
+            <select name="room-type" id="room-type">
+              <optgroup label="Rooms">
+                <option value="single bed room">Single Bed Room</option>
+                <option value="double bed room">Double Bed Room</option>
+              </optgroup>
+              <optgroup label="Hostels">
+                <option value="boy-girl hostel">Boy-Girl Hostels</option>
+              </optgroup>
+              <optgroup label="Other">
+                <option value="other">Other</option>
+              </optgroup>
+            </select>
+          </div>
+          <br />
+
+          <div>
+            <label for="state">STATE:- </label>
+            <input
+              type="text"
+              name="state"
+              id="state"
+              placeholder="enter state...."
+            />
+          </div>
+          <br />
+
+          <div>
+            <label for="city">CITY:- </label>
+            <input
+              type="text"
+              name="city"
+              id="city"
+              placeholder="enter city...."
+            />
+          </div>
+          <br />
+
+          <div>
+            <label for="room-area">ROOM AREA:- </label>
+            <input
+              type="text"
+              name="room-area"
+              id="room-area"
+              placeholder="enter area...."
+            />
+          </div>
+          <br />
+
+          <div>
+            <label for="room-location">ROOM LOCATION:- </label>
+            <input
+              type="text"
+              name="room-location"
+              id="room-location"
+              placeholder="enter location...."
+            />
+          </div>
+          <br />
+
+          <div>
+            <label for="railway-station"
+              >PROXIMITY TO RAILWAY STATIONS:-
+            </label>
+            <input
+              type="text"
+              name="railway-stations"
+              id="railway-station"
+              placeholder="enter railway location..."
+            />
+          </div>
+          <br />
+
+          <div>
+            <label for="bus-station">PROXIMITY TO BUS STATIONS:- </label>
+            <input
+              type="text"
+              name="bus-stations"
+              id="bus-stations"
+              placeholder="enter bus location..."
+            />
+          </div>
+          <br />
+
+          <div>
+            <label for="coaching-centers"
+              >PROXIMITY TO COACHING CENTERS:-
+            </label>
+            <input
+              type="text"
+              name="coaching-centers"
+              id="coaching-centers"
+              placeholder="enter coaching location..."
+            />
+          </div>
+          <br />
+
+          <div>
+            <label for="customer-type">CUSTOMER NEEDED:- </label>
+            <select name="customer-type" id="customer-type">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="family">Family</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <br />
+
+          <div>
+            <label for="facilities" class="align-content"
+              >FACILITIES WITH ROOM:-
+            </label>
+
+            <div class="checkbox_facilities">
+              <div class="checkbox_facilities">
+                <input type="checkbox" name="fac-bed" id="fac-bed" value="bed" />
+                <label for="bed">Bed</label><br />
+              </div>
+
+              <div class="checkbox_facilities">
+                <input type="checkbox" name="fac-fan" id="fac-fan"
+                value="fan" />
+                <label for="fan">Fan</label><br />
+              </div>
+
+              <div class="checkbox_facilities">
+                <input type="checkbox" name="fac-bath-lath" id="fac-bath-lath" value="bath-lath" />
+                <label for="bath-lath">Bath+Lath</label><br />
+              </div>
+
+              <div class="checkbox_facilities">
+                <input type="checkbox" name="fac-table" id="fac-table" value="table" />
+                <label for="table">Table</label><br />
+              </div>
+
+              <div class="checkbox_facilities">
+                <input type="checkbox" name="fac-water" id="fac-water" value="water" />
+                <label for="water">Water</label><br />
+              </div>
+
+              <div class="checkbox_facilities">
+                <input type="checkbox" name="fac-electricity" id="fac-electricity" value="electricity" />
+                <label for="electricity">Electricity</label><br />
+              </div>
+            </div>
+
+            <input
+              type="text"
+              name="fac-other-facilities"
+              id="fac-other-facilities"
+              placeholder="other facilities"
+            />
+          </div>
+          <br />
+
+          <div>
+            <label for="rent">ROOM RENT:- </label>
+            <input
+              type="text"
+              id="rent"
+              name="rent"
+              placeholder="enter amount"
+            /><strong> rupees + </strong>
+            <label for="electricity">Electricity</label>
+            <select name="electricity" id="electricity">
+              <option value="included">Included</option>
+              <option value="not included">Not Included</option>
+            </select>
+          </div>
+          <br />
+
+          <div>
+            <label class="uphotos">UPLOAD ROOM PHOTOS:-</label>
+            <div>
+              <input type="file" name="uphotos1" class="uphotos"></input><br>
+              <input type="file" name="uphotos2" class="uphotos"></input><br>
+              <input type="file" name="uphotos3" class="uphotos"></input><br>
+              <input type="file" name="uphotos4" class="uphotos"></input><br>
+            </div>
+          </div>
+          <br />
+
+          <div>
+            <div>
+              <label for="terms-and-conditions">TERMS AND CONDITIONS:- </label>
+            </div>
+            <textarea
+              name="terms-and-conditions"
+              id="terms-and-conditions"
+              cols="30"
+              rows="10"
+              placeholder="write other terms and conditions"
+            ></textarea>
+          </div>
+          <br />
+        </fieldset>
+        <br />
+        <div align="center">
+          <button type="reset">RESET</button>
+          <button type="submit" value="save-">ADD ROOM</button>
+        </div>
+      </form>
+    </body>
+  </html></l!DOCTYPE
+>

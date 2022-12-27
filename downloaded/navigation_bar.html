@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="navigation_bar.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/67a7f66806.js" crossorigin="anonymous"></script>
+    <title>NAVIGATION BAR</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav>
+            <input type="checkbox" id="show-search">
+            <input type="checkbox" id="show-menu">
+            <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label for="show-menu">
+          <div class="content">
+            <div class="logo"><a href="#">ApnaRoom</a></div>
+            <ul class="links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Wishlist</a></li>
+                <li><a href="#">Notifications</a></li>
+                <li><a href="our_services.html">Services</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                <li><a href="profile_checklogin.jsp" class="desktop-link">Profile</a>
+                    <label for="show-profile">Profile</label>
+            <input type="checkbox" id="show-profile">
+            <ul>
+                <li><a href="login.jsp">Login</a></li>
+                <li><a href="sign_up_page.html">Sign Up</a></li>
+            </ul>
+            </li>
+            </ul>
+    </div>
+    <form action="#" class="search-box">
+        <input type="text" placeholder="Type here to Search...." required>
+        <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+    </form>
+    <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label for="show-search">
+      </nav>
+     
+      <form action="search_page.jsp">
+      <button class="button"><span>Explore More!!!</span></button>\
+    </form>
+    </div>
+  </body>
+</html>

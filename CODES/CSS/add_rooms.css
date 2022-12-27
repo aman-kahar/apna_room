@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4px;
+    background:url("../imported_images/add_rooms.jpg")no-repeat center center/cover;
+    z-index: -1;
+  }
+
+  h1 {
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  p {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 20px 0 30px;
+  }
+
+  /* Full-width input fields */
+input[type=text], input[type=password], input[type=email],input[type=tel],input[type=date],input[type=number],textarea,input[type=file],select {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    border:2px solid black;
+    box-shadow:2px 2px grey;
+  }
+
+  /* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus,input[type=email]:focus,input[type=tel]:focus,input[type=date]:focus,input[type=number]:focus,textarea:focus,input[type=file]:focus,select:focus{
+    background-color: #ddd;
+    outline: none;
+  }
+
+  /* Set a style for all buttons */
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+
+  button:hover {
+    opacity:1;
+  }
+
+  /* Add padding to container elements */
+.container {
+    padding: 16px;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  fieldset{
+    padding: 40px 90px;
+  }
+
+  #heading{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:rgb(68, 68, 5);
+    font-size:30px;
+  }
+  
+  fieldset{
+  box-shadow: 5px 5px 2px 2px rgb(0, 0, 0);
+  }
+  
+  
+  .container label{ 
+    background:rgb(0, 0, 0);
+    padding:3px 3px;
+    color:white;
+    font-weight: 800;
+    box-shadow:2px 2px grey;
+  }
+  
+  .gender label{
+    background:rgb(223, 215, 215);
+    color:black;
+  }
+  
+  #gender1{
+    background:black;
+    color:white;
+  }
+  
+  
+  

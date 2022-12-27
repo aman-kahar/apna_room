@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SIGN_UP_PAGE</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/sign_up_page1.css">
+</head>
+
+<body>
+
+    <form action="../JSP/sign_up_page.jsp"  method="post" enctype="multipart/form-data" id="to-all-id" class="to-all-class">
+
+     <div class="container">
+            <h2 id="heading">SIGN-UP PAGE</h2>
+        <fieldset>
+            <div class="div-class">
+                <label for="u-name" id="label-name">
+                    NAME:-
+                </label>
+                <input type="text" id="u-name" name="u-name" placeholder="Enter your name" required>
+            </div><br>
+
+            <div class="div-class">
+                <label for="u-email" id="label-email">
+                    Email Id:-
+                </label>
+                <input type="email" id="u-email" name="u-email" placeholder="Enter your email" required>
+            </div><br>
+
+            <div class="div-class">
+                <label for="dob" id="label-dob">
+                    D.O.B:-
+                </label>
+                <input type="date" id="dob" name="dob" placeholder="Enter your DOB" required>
+            </div><br>
+
+            <div>
+                <label for="age" id="label-age">
+                    Age:-
+                </label>
+                <input type="number" id="age" name="age" placeholder="Enter your age">
+            </div><br>
+
+            <div class="div-class">
+                <label for="mobile" id="label-mobile">
+                    MOBILE NO:-
+                </label>
+                <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+            </div><br>
+
+            <div>
+                <label for="oth-mobile">
+                    OTHER MOBILE NO:-
+                </label>
+                <input type="tel" id="oth-mobile" name="oth-mobile" placeholder="Enter Other mobile number">
+            </div><br>
+
+            <div class="div-class gender">
+                <label id="gender1">GENDER:-</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male" class="gender"><span>Male</span></label>
+                <input type="radio" id="female" name="gender" value="female" required> 
+                <label for="female" class="gender"><span>Female</span></label>
+                <input type="radio" id="other" name="gender" value="other" required>
+                <label for="other" class="gender"><span>Other</span></label>
+            </div><br><br>
+
+            <div class="div-class">
+                <label for="address">
+                    ADDRESS:-
+                </label>
+                <textarea id="address" name="address" placeholder="Type Address..." rows="5" cols="30" required>
+                </textarea>
+            </div><br>
+
+            <div class="div-class">
+                    <label>UPLOAD PROFILE PHOTO:-</label>
+                    <input type="file" id="u-photos" name="u-photos">
+                    </input>
+            </div><br>
+
+            <div class="div-class">
+                <label for="pssword">
+                    CREATE PASSWORD:-<input type="password" id="pssword" name="pssword" placeholder="Enter Password" required>
+                </label><br><br>
+                <label for="c-pssword">
+                    CONFORM PASSWORD:-<input type="password" id="c-pssword" name="c-pssword" placeholder="Conform Password" required>
+                </label><br><br>
+            </div>
+        </fieldset><br>
+        <footer>
+            <div align="center" class="div-class">
+                <button type="reset" value="Reset">
+                    Reset</button>
+                <button type="submit" value="Submit">
+                    Submit
+                </button>
+            </div><br>
+        </footer>
+    </div>
+    </form>
+</body>
+
+</html>

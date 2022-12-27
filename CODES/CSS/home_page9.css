@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Patrick Hand", cursive;
+}
+
+
+.filter-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+  background: red;
+}
+
+.filter-items {
+  background: white;
+  box-shadow: 2px;
+  color: black;
+  padding: 14px 20px 20px 20px;
+  border: 3px solid none;
+  box-shadow: 2px 2px 3px 3px grey;
+}
+
+.filter-items-input {
+  margin: 0 15px 0 25px;
+}
+
+.room-overlook {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: yellow; */
+  overflow: hidden;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 210px 220px 80px;
+  grid-template-areas: "image" "text" "stats";
+  font-family: roboto, sans-serif;
+  border-radius: 18px;
+  background: white;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  text-align: center;
+  margin: 25px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.card-image {
+  grid-area: image;
+  background: url("../imported_images/image2.jpeg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+.card-text {
+  grid-area: text;
+  margin: 25px;
+}
+
+.card-text .date {
+  color: red;
+  font-size: 13px;
+}
+
+.card-text p {
+  color: grey;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.card-text h2 {
+  margin-top: 0px;
+  font-size: 28px;
+}
+
+.card-stats {
+  grid-area: stats;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: red;
+}
+
+.card-stats .stat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  color: white;
+}
+
+.card-text .type {
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.card-stats .value {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.card-stats .border {
+  border-left: 1px solid rgb(172, 26, 87);
+  border-right: 1px solid rgb(172, 26, 87);
+}
+
+.card-stats .value sup {
+  font-size: 12px;
+}
+
+/* LOGOUT PROFILE CODE STARTS */
+.main-logout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 25px;
+  top: 6%;
+  transform: translateY(-50%);
+  padding: 6px 90px;
+  cursor: pointer;
+  z-index: 1;
+  background: #000000;
+}
+
+.main-logout h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 55px;
+  top: 28%;
+  transform: translateY(-50%);
+  padding: 5px 10px;
+  cursor: pointer;
+  z-index: 1;
+  font-size: 15px;
+  color: yellow;
+  font-weight: 100;
+}
+
+.login-btn a h3 {
+  position: fixed;
+  right: 25px;
+  top: 6%;
+  transform: translateY(-50%);
+  background: #000000;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: yellow;
+  z-index: 1;
+}
+
+.main-logout img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 55px;
+  top: 28%;
+  transform: translate(82px, -1px);
+  border: 1px solid rgb(255, 0, 0);
+  border-radius: 30px;
+  width: 50px;
+}
+
+.main-logout button,
+.login-btn button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 70px;
+  top: 75%;
+  transform: translateY(-50%);
+  background: #000000;
+  padding: 5px 10px;
+  color: yellow;
+  border: none;
+}
+
+.btn:hover,
+button:hover {
+  outline: 0;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.btn:active,
+button:active {
+  outline: 0;
+  color: #fff;
+}
+
+.btn-cancel:hover {
+  border: none;
+  color: #fff;
+  background: linear-gradient(to bottom, #e74c3c 50%, #c0392b 50%);
+  background-size: 110% 210%;
+  background-position: left top;
+  background-position: right bottom;
+}
+
+.login-btn button {
+  right: 50px;
+  top: 6%;
+  z-index: 1;
+}
+
+.btn-cont:hover {
+  padding: 0.7em 1.5em;
+  border: none;
+  color: #fff;
+  background: linear-gradient(to left, #2ecc71 50%, #27ae60 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  background-position: left bottom;
+}
+
+/* LOGOUT PROFILE CODE STARTS */

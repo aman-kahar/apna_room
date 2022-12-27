@@ -1,0 +1,119 @@
+body {
+  background: #262626;
+  color: rgb(255, 208, 0);
+  margin: 0;
+  font-family: "Patrick Hand", cursive;
+}
+
+.popup .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -150%) scale(0);
+  width: 300px;
+  height: 450px;
+  z-index: 2;
+  text-align: center;
+  border-radius: 20px;
+  background: #262626;
+  box-shadow: 38px 38px 56px #1e1e1e, -25px -25px 38px #1e1e1e;
+  z-index: index 1;
+}
+
+.popup .close-btn {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  border-radius: 50%;
+  padding: 2px 5px 7px 5px;
+  background: #292929;
+  box-shadow: 5px 5px 15px #1e1e1e, -15px -15px 28px #1e1e1e;
+}
+
+.popup .close-btn i {
+  color: rgb(148, 148, 38);
+  padding: 8px 0px;
+}
+
+.popup.active .content {
+  transition: all 300ms ease-in-out;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+h1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+a {
+  font-weight: 600;
+  color: white;
+}
+
+.input-field .validate {
+  padding: 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 15px;
+  color: #bfc0c0;
+  background: #262626;
+  box-shadow: inset 5px 5px 5px #232323, inset -5px -5px 5px #292929;
+  outline: none;
+}
+
+.first-button {
+  color: white;
+  font-size: 18px;
+  font-weight: 500px;
+  padding: 30px 50px;
+  border-radius: 40px;
+  border: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #262626;
+  box-shadow: 8px 8px 18px #202020, -8px -8px 15px #2c2c2c;
+  transition: box-shadow 0.35s ease !important;
+  outline: none;
+}
+
+.first-button:active {
+  background: linear-gradient(145deg, #222222, #292929);
+  box-shadow: 5px 5px 10px #262626, -5px -5px 10px #262626;
+  border: none;
+}
+
+.second-button {
+  color: rgb(255, 208, 0);
+  font-size: 18px;
+  font-weight: 500px;
+  margin-top: 20px;
+  padding: 20px 30px;
+  border-radius: 40px;
+  border: none;
+  background: #262626;
+  box-shadow: 8px 8px 18px #202020, -8px -8px 15px #2c2c2c;
+  transition: box-shadow 0.35s ease !important;
+  outline: none;
+}
+
+.second-button:active {
+  background: linear-gradient(145deg, #222222, #292929);
+  box-shadow: 5px 5px 10px #262626, -5px -5px 10px #262626;
+  border: none;
+  outline: none;
+}
+
+p {
+  color: #bfc0c0;
+  padding: 20px;
+}
